@@ -1,2 +1,2 @@
- - 名前: yuichi
+ - 名前： yuichi
  
