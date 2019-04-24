@@ -5,7 +5,7 @@ workflow "New workflow" {
 
 action "npm install" {
   uses = "actions/npm@c555744"
-  runs = "npm install"
+  args = "install"
 }
 
 action "danger" {
