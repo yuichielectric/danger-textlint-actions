@@ -1,0 +1,8 @@
+version: 1
+rules:
+  - expected: GitHub
+    pattern:  Github
+    prh: 正式な表記は"GitHub"です。
+  - expected: GitHub
+    pattern: github
+    prh: 正式な表記は"GitHub"です。
