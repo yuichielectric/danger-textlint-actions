@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "asciidoctor"
-  ],
   "filters": {},
   "rules": {
     "prh": {

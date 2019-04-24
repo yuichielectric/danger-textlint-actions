@@ -15,6 +15,7 @@
   "dependencies": {
     "textlint": "^11.2.3",
     "textlint-rule-preset-japanese": "^2.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.3",
     "textlint-rule-prh": "^5.2.0"
   }
 }
