@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "asciidoctor"
+  ],
+  "filters": {},
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "./prh.yml"
+      ]
+    },
+    "preset-japanese": true,
+    "preset-jtf-style": true
+  }
+}
