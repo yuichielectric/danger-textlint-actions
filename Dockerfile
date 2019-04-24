@@ -1,9 +1,8 @@
 FROM circleci/ruby:2.4.1-node-browsers
 
 
-RUN mkdir /github/workspace/.bundle
-RUN echo 'BUNDLE_SILENCE_ROOT_WARNING: "1"' > /github/workspace/.bundle/config
-RUN bundle install
+RUN gem install danger -v '>= 5.10.3'
+RUN gem install danger-checkstyle_format
 RUN npm install
 
 ENTRYPOINT ["danger"]
