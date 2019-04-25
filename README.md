@@ -2,7 +2,7 @@
 
 This GitHub Action submits textlint review comments if there are violations.
 
-<img src="https://github.com/yuichielectric/danger-textlint-actions/raw/master/asserts/screenshot.png" alt="" width="400">
+<img src="https://github.com/yuichielectric/danger-textlint-actions/blob/master/assets/screenshot.png?raw=true" alt="">
 
 To set up the textlint, you need to
 
