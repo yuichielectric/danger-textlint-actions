@@ -10,8 +10,7 @@ LABEL "homepage"="https://github.com/yuichielectric/danger-textlint-actions"
 LABEL "maintainer"="Yuichi Tanaka (https://github.com/yuichielectric)"
 
 RUN apk add --update --no-cache git nodejs
-RUN gem install danger -v '>= 5.10.3'
-RUN gem install danger-textlint
+RUN bundle install
 
 ENTRYPOINT "danger"
 CMD "--verbose"
