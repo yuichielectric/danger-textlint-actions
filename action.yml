@@ -1,0 +1,6 @@
+# action.yml
+name: "danger-textlint-actions"
+description: "This GitHub Action submits textlint review comments if there are violations."
+runs:
+  using: "docker"
+  image: "Dockerfile"
