@@ -54,22 +54,23 @@ textlint.lint
 
 An example workflow looks like this:
 
-```workflow
-workflow "textlint" {
-  resolves = "danger"
-  on = "pull_request"
-}
-
-action "npm install" {
-  uses = "actions/npm@c555744"
-  args = "install"
-}
-
-action "danger" {
-  needs = ["npm install"]
-  uses = "yuichielectric/danger-textlint-actions@master"
-  secrets = ["GITHUB_TOKEN"]
-}
+```YAML
+on: pull_request
+name: textlint
+jobs:
+  textlint:
+    name: textlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 10.*
+      - run: npm install
+      - name: danger
+        uses: yuichielectric/danger-textlint-actions@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 ## License
